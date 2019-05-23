@@ -1,0 +1,13 @@
+.logo {
+  font-family: $logo-font;
+  font-size: 1.8em;
+}
+.menu {
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 576px) {
+  .logo {
+    font-size: 2em;
+  }
+}

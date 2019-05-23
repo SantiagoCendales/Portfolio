@@ -1,0 +1,29 @@
+.contact {
+  background-color: $secondary-color;
+  color: $white;
+}
+.social-media a,
+.contact-info i {
+  color: $white;
+  text-decoration: none;
+  transition: .3s;
+  font-size: 3.5rem;
+}
+
+
+.social-media a:hover {
+  color: darken($principal-color, 20%);
+  transition: .3s;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+  color: darken($principal-color, 20%) !important;
+}
+
+@media screen and (min-width: 576px) {
+  .social-media a,
+  .contact-info i {
+    font-size: 5rem;
+  }
+  
+}
