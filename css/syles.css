@@ -36,19 +36,100 @@
 .icon-facebook:before {
   content: "\e905"; }
 
+body {
+  font-family: 'Montserrat', sans-serif; }
+
 .main-text {
   color: #fed136 !important; }
 
+.navbar {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 0.2rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
 .logo {
-  font-family: "Kaushan Script", cursive;
-  font-size: 1.8em; }
+  font-size: 1.8em;
+  font-family: "Kaushan Script", cursive; }
 
 .menu {
   font-size: 1.2em; }
 
+.navbar .mainbar-container {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.navbar-toggler {
+  border: none;
+  position: absolute;
+  top: 13px;
+  right: 5px; }
+
 @media screen and (min-width: 576px) {
   .logo {
     font-size: 2em; } }
+
+@media screen and (min-width: 991px) {
+  .navbar {
+    background-color: transparent;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    padding: 2em 0; }
+  .logo {
+    font-size: 2.5em; }
+  .navbar-shrink {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0.2rem 0; }
+  .navbar-shrink .logo {
+    font-size: 1.9em; } }
+
+.masthead {
+  position: relative; }
+
+.masthead-imageContainer img {
+  height: 60vh;
+  -o-object-fit: cover;
+  object-fit: cover; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.overlay .container,
+.overlay .row {
+  height: 100%; }
+
+.site-title {
+  font-size: 2.1em;
+  font-weight: 400;
+  margin-bottom: .3em; }
+
+.title-detail {
+  font-size: 1em;
+  font-weight: 300; }
+
+@media screen and (min-width: 575px) {
+  .masthead {
+    font-size: 20px; }
+  .masthead-imageContainer img {
+    height: 80vh; } }
+
+@media screen and (min-width: 767px) {
+  .masthead {
+    font-size: 25px; }
+  .masthead-imageContainer img {
+    height: 100vh; } }
+
+@media screen and (min-width: 991px) {
+  .masthead {
+    font-size: 30px; } }
 
 .contact {
   background-color: #212529;
@@ -73,7 +154,7 @@
   text-decoration: underline;
   color: #cd9f01 !important; }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 767px) {
   .social-media a,
   .contact-info i {
     font-size: 5rem; } }

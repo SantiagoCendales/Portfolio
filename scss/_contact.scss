@@ -20,7 +20,7 @@
   color: darken($principal-color, 20%) !important;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 767px) {
   .social-media a,
   .contact-info i {
     font-size: 5rem;

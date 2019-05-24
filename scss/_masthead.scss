@@ -1,0 +1,68 @@
+
+.masthead {
+  position: relative;
+}
+.masthead-imageContainer img {
+  height: 60vh;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($black, 0.7)
+}
+
+.overlay .container,
+.overlay .row {
+  height: 100%;
+}
+
+.site-title {
+  font-size: 2.1em;
+  font-weight: 400;
+  margin-bottom: .3em;
+}
+.title-detail {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+@media screen and (min-width:575px) {
+  .masthead {
+    font-size: 20px;
+  }
+  .masthead-imageContainer img {
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width:767px) {
+  .masthead {
+    font-size: 25px;
+  }
+  .masthead-imageContainer img {
+    height: 100vh;
+  }
+  // .site-title {
+  //   font-size: 5.5em;
+  //   font-weight: 400;
+  //   margin-bottom: .4em;
+  // }
+  // .title-detail {
+  //   font-size: 3em;
+  //   font-weight: 300;
+  // }
+}
+
+@media screen and (min-width:991px) {
+  .masthead {
+    font-size: 30px;
+  }
+}
+
+
+
+
