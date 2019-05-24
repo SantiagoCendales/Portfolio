@@ -44,10 +44,7 @@ body {
 
 .navbar {
   background-color: rgba(0, 0, 0, 0.9);
-  padding: 0.2rem;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s; }
+  padding: 0.2rem; }
 
 .logo {
   font-size: 1.8em;
@@ -79,7 +76,10 @@ body {
     transition: 0.3s;
     padding: 2em 0; }
   .logo {
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
   .navbar-shrink {
     background-color: rgba(0, 0, 0, 0.9);
     padding: 0.2rem 0; }
@@ -130,6 +130,32 @@ body {
 @media screen and (min-width: 991px) {
   .masthead {
     font-size: 30px; } }
+
+.expertise {
+  color: #7a7a7a !important; }
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 28rem; }
+
+.card img {
+  padding: 10px; }
+
+.card-body {
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-column-span: -2;
+  grid-column-end: -1; }
+
+@media screen and (min-width: 575px) {
+  .card img {
+    padding: 25px; } }
 
 .contact {
   background-color: #212529;

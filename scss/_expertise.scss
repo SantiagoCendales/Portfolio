@@ -1,0 +1,22 @@
+.expertise {
+  color: $light-gray !important;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  max-width: 28rem;
+}
+.card img {
+  padding: 10px;
+}
+.card-body {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+@media screen and (min-width: 575px) {
+  .card img {
+    padding: 25px;
+  }
+}
