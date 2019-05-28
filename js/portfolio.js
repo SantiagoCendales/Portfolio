@@ -1,7 +1,9 @@
+
+
 // Activate scrollspy
 $('body').scrollspy({ 
   target: '#navbarSupportedContent' ,
-  offset: 56
+  offset: 66
 })
 
 var navbarCollapse = function() {
@@ -16,3 +18,19 @@ var navbarCollapse = function() {
 navbarCollapse();
 // Collapse the navbar when page is scrolled
 $(window).scroll(navbarCollapse);
+
+$(".expertise-animation").click(function() {
+
+  $("html, body").animate({scrollTop: $("#expertise").offset().top -60} , 400);
+
+});
+$(".portfolio-animation").click(function() {
+
+  $("html, body").animate({scrollTop: $("#portfolio").offset().top -60} , 400);
+
+});
+$(".contact-animation").click(function() {
+
+  $("html, body").animate({scrollTop: $("#contact").offset().top -60} , 400);
+
+});

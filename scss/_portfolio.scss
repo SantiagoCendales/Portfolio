@@ -1,0 +1,15 @@
+.portfolio {
+  color: $light-gray;
+}
+
+.portfolio a {
+  color: $principal-color;
+  font-weight: 600;
+  padding-bottom: 3rem;
+}
+.portfolio a:hover {
+  color: darken($principal-color, 20%);
+}
+.portfolio .project-details {
+  padding-bottom: 1em;
+}

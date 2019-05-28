@@ -137,12 +137,12 @@ body {
 .card {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  max-width: 28rem; }
+  max-width: 25rem; }
 
 .card img {
   padding: 10px; }
@@ -156,6 +156,20 @@ body {
 @media screen and (min-width: 575px) {
   .card img {
     padding: 25px; } }
+
+.portfolio {
+  color: #7a7a7a; }
+
+.portfolio a {
+  color: #fed136;
+  font-weight: 600;
+  padding-bottom: 3rem; }
+
+.portfolio a:hover {
+  color: #cd9f01; }
+
+.portfolio .project-details {
+  padding-bottom: 1em; }
 
 .contact {
   background-color: #212529;
